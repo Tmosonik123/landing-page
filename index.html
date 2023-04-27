@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIN.Landing</title>
+    <link rel="icon" href="img/icons8-exchange-48.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="btn" onclick="openPopup()">Proceed</button>
+        <div class="popup" id="popup">
+            <img src="img/icons8-exchange-48.png">
+            <h2>
+                Notice!
+            </h2>
+            <p>you are about to leave this site.</p>
+            <a href="#"><button type="button" onclick="closepopup()">Ok</button></a>
+        </div>
+    </div>
+
+    <script>
+
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+            //ADD A NEW CLASS (open-popup) TO THE POPUP CARD
+
+        }
+        function closepopup(){
+            popup.classList.remove("open-popup");
+            
+        }
+    </script>
+</body>
+</html>
