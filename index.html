@@ -9,24 +9,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h3>Bina<span>nce.</span></h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://tmosonik123.github.io/project223.io/">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <button type="button" class="btn" onclick="openPopup()">Proceed</button>
         <div class="popup" id="popup">
             <img src="img/icons8-exchange-48.png">
+            <button type="button" class="btnone" onclick="closepopup()">Close</button>
             <h2>
                 Notice!
             </h2>
             <p>you are about to leave this site.</p>
-            <a href="#"><button type="button" onclick="closepopup()">Ok</button></a>
+            <a href="https://edition.cnn.com/markets/"><button type="button" onclick="closepopup()">Ok</button></a>
         </div>
     </div>
+    <footer id="contacts">
+        <div class="social">
+            <h3>
+                Follow Us:
+            </h3>
+            <div class="icons">
+                <a href="https://www.reddit.com/user/Successful_Jury_3525"><i class="fa-brands fa-reddit"></i></a>
+                <a href="https://github.com/Tmosonik123"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/TkboominKE"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/t-mosonik-594490264"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+            <div class="contact">
+                <h3>E-mail:</h3>
+                <p>binanceadmin@gmail.com</p>
+                <h3>Tel:</h3>
+                <p>+254709-358-626</p>
+            </div>
+            <div class="shortlinks">
+                <a href="https://tmosonik123.github.io/project223.io/">Home</a>
+                <a href="https://tmosonik123.github.io/project223.io/#about">About Us</a>
+                <a href="#">Services</a>
+            </div>
+        
+    </footer>
 
     <script>
 
         let popup = document.getElementById("popup");
         function openPopup(){
             popup.classList.add("open-popup");
-            //ADD A NEW CLASS (open-popup) TO THE POPUP CARD
+            //ADDS A NEW CLASS (open-popup) TO THE POPUP CARD
 
         }
         function closepopup(){
